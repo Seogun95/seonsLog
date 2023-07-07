@@ -1,16 +1,9 @@
 import './globals.css';
-import { Nanum_Gothic, Open_Sans } from 'next/font/google';
+
 import { Metadata } from 'next';
-import { META } from '../constants/seo';
 import localFont from 'next/font/local';
 
-//sans는 variable fonts이기때문에 font-weight 설정 필요 없음
-const sans = Open_Sans({ subsets: ['latin'] });
-//나눔고딕은 variable fonts가 아니기때문에 font-weight 설정 필요
-const gothic = Nanum_Gothic({
-  weight: '700',
-  subsets: ['latin'],
-});
+import { META } from '../constants/seo';
 
 const myFont = localFont({
   src: './fonts/Maplestory-Light.woff2',
