@@ -4,6 +4,9 @@ import { Metadata } from 'next';
 import localFont from 'next/font/local';
 import NextTopLoader from 'nextjs-toploader';
 
+import Footer from '@/components/(layout)/Footer';
+import Header from '@/components/(layout)/Header';
+
 import { META } from '../constants/seo';
 
 const myFont = localFont({
@@ -54,7 +57,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko" className={myFont.className}>
-      <body>
+      <body className="flex flex-col w-full text-white bg-zinc-900">
         <NextTopLoader
           color="#2299DD"
           initialPosition={0.08}
@@ -66,7 +69,9 @@ export default function RootLayout({
           speed={200}
           shadow="0 0 10px #2299DD,0 0 5px #2299DD"
         />
-        <section>{children}</section>
+        <Header />
+        <main className="p-5 m-auto max-w-screen-2xl grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );
