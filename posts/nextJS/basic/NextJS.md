@@ -1,3 +1,13 @@
+---
+title: 'Next.js란?'
+description: 'Next.js란 무엇이고 6가지 원칙에 대해 알아봅시다.'
+image: ''
+tags:
+  - next
+date: 2023-07-08 00:41:09
+category: '기초'
+---
+
 # Next.JS
 
 Next.js는 2016년에 Vercel사에서 오픈소스로 발표한 React 기반의 웹 프레임워크입니

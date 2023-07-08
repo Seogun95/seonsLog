@@ -1,3 +1,17 @@
+---
+title: 'SSR'
+description:
+  'SSR은 클라이언트가 서버에 페이지 요청을 하면, 서버는 페이지의 코드와 데이터
+  등을 처리하여 완전한 HTML 파일을 클라이언트에게 전달합니다.'
+image: ''
+tags:
+  - CSR
+  - SSR
+  - 렌더링
+date: 2023-07-08 02:25:19
+category: '기초'
+---
+
 # SSR (Server Side Rendering)
 
 - **렌더링 주체:** 서버

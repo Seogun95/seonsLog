@@ -1,11 +1,13 @@
 ---
 title: '빌드 분석 결과'
 description: '개발 모드 에서 페이지의 렌더링 방식 확인하는 방법'
+image: ''
 tags:
   - Dev mode
   - SSG
   - SSR
-date: '2023-07-01'
+date: 2023-07-08 00:52:14
+category: '입문'
 ---
 
 # 빌드 분석 결과

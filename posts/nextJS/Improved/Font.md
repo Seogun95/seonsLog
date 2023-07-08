@@ -1,20 +1,39 @@
+---
+title: 'Font'
+description: 'Next.js 13 버전부터는 폰트 최적화를 기본적으로 제공합니다.'
+image: ''
+tags:
+  - Font
+  - google
+date: 2023-07-08 02:26:16
+category: '성능개선'
+---
+
 # Font
 
 [공식 문서 - Font](https://nextjs.org/docs/app/api-reference/components/font)
 
 Next.js 13 버전부터는 폰트 최적화를 기본적으로 제공합니다.
 
-폰트 최적화를 위해 외부 폰트를 다운로드하는 동안 페이지의 레이아웃 변동이 발생하여 레이아웃 시프트(layout shift)가 발생할 수 있습니다. 이러한 문제를 해결하기 위해 Next.js는 `next/font`를 제공합니다.
+폰트 최적화를 위해 외부 폰트를 다운로드하는 동안 페이지의 레이아웃 변동이
+발생하여 레이아웃 시프트(layout shift)가 발생할 수 있습니다. 이러한 문제를
+해결하기 위해 Next.js는 `next/font`를 제공합니다.
 
-`next/font`를 사용하면 폰트 최적화가 자동으로 수행되며(사용자 정의 폰트 포함), 개인 정보와 성능을 향상시키기 위해 외부 네트워크 요청을 제거합니다.
+`next/font`를 사용하면 폰트 최적화가 자동으로 수행되며(사용자 정의 폰트 포함),
+개인 정보와 성능을 향상시키기 위해 외부 네트워크 요청을 제거합니다.
 
-`next/font`에는 내장된 자체 호스팅 기능이 포함되어 있어 어떤 폰트 파일이든 최적으로 로드할 수 있습니다. 이는 내부적으로 CSS의 `size-adjust` 속성을 사용하여 레이아웃 변동 없이 웹 폰트를 최적으로 로드할 수 있게 해줍니다.
+`next/font`에는 내장된 자체 호스팅 기능이 포함되어 있어 어떤 폰트 파일이든
+최적으로 로드할 수 있습니다. 이는 내부적으로 CSS의 `size-adjust` 속성을 사용하여
+레이아웃 변동 없이 웹 폰트를 최적으로 로드할 수 있게 해줍니다.
 
-이 새로운 폰트 시스템을 통해 Google Fonts의 모든 폰트를 편리하게 사용할 수도 있습니다. CSS와 폰트 파일은 빌드 시간에 다운로드되고 정적 자산과 함께 자체 호스팅됩니다. 브라우저는 Google에 요청을 보내지 않습니다.
+이 새로운 폰트 시스템을 통해 Google Fonts의 모든 폰트를 편리하게 사용할 수도
+있습니다. CSS와 폰트 파일은 빌드 시간에 다운로드되고 정적 자산과 함께 자체
+호스팅됩니다. 브라우저는 Google에 요청을 보내지 않습니다.
 
 ## 사용 방법
 
-Next.js 13 버전부터는 기본적으로 Google 폰트를 가져올 수 있도록 `app/layout.tsx` 파일 내에서 설정되어 있습니다.
+Next.js 13 버전부터는 기본적으로 Google 폰트를 가져올 수 있도록 `app/layout.tsx`
+파일 내에서 설정되어 있습니다.
 
 ```tsx
 import './globals.css';
@@ -40,7 +59,10 @@ export default function RootLayout({
 }
 ```
 
-사용하고자 하는 폰트가 있다면 [variable fonts](https://fonts.google.com/variablefonts)를 사용하여 직접 설정할 수 있습니다. Variable fonts는 한 파일에서 다양한 `font-weight`를 관리할 수 있는 폰트 설정 방법입니다.
+사용하고자 하는 폰트가 있다면
+[variable fonts](https://fonts.google.com/variablefonts)를 사용하여 직접 설정할
+수 있습니다. Variable fonts는 한 파일에서 다양한 `font-weight`를 관리할 수 있는
+폰트 설정 방법입니다.
 
 태그별로 폰트를 다르게 적용하려면 다음과 같이 설정할 수 있습니다.
 
@@ -105,9 +127,11 @@ return (
 
 ## 로컬에 있는 폰트 적용하는 방법
 
-로컬 폰트를 적용하려면 `next/font/local`을 가져오고 로컬 폰트 파일의 `src`를 지정합니다. 최상의 성능과 유연성을 위해 변수형 폰트를 사용하는 것을 권장합니다.
+로컬 폰트를 적용하려면 `next/font/local`을 가져오고 로컬 폰트 파일의 `src`를
+지정합니다. 최상의 성능과 유연성을 위해 변수형 폰트를 사용하는 것을 권장합니다.
 
-`app/layout.tsx` 파일에서 다음과 같이 `localFont` 함수를 사용하여 폰트를 가져올 수 있습니다.
+`app/layout.tsx` 파일에서 다음과 같이 `localFont` 함수를 사용하여 폰트를 가져올
+수 있습니다.
 
 ```tsx
 import styles from '@/app/layout.module.css';
@@ -138,9 +162,12 @@ export default function RootLayout({
 }
 ```
 
-폰트 파일의 경로를 올바르게 지정해야 합니다. 만약 `Maplestory-Light.woff2` 폰트 파일이 `app` 폴더와 같은 경로에 있다면 위의 코드가 작동합니다. 폰트 파일이 다른 경로에 있다면 적절한 상대 경로를 사용하여 경로를 지정해야 합니다.
+폰트 파일의 경로를 올바르게 지정해야 합니다. 만약 `Maplestory-Light.woff2` 폰트
+파일이 `app` 폴더와 같은 경로에 있다면 위의 코드가 작동합니다. 폰트 파일이 다른
+경로에 있다면 적절한 상대 경로를 사용하여 경로를 지정해야 합니다.
 
-또한 src 경로에서 local font 를 사용할 경우, app 폴더 안에 fonts 라는 폴더를 만들어 준후, 그 안에 폰트 파일들을 넣어주면 됩니다.
+또한 src 경로에서 local font 를 사용할 경우, app 폴더 안에 fonts 라는 폴더를
+만들어 준후, 그 안에 폰트 파일들을 넣어주면 됩니다.
 
 ```
 📦src
@@ -154,4 +181,5 @@ export default function RootLayout({
 
 ```
 
-더 자세한 정보 [Font APIReference](https://nextjs.org/docs/api-reference/next/font/local)
+더 자세한 정보
+[Font APIReference](https://nextjs.org/docs/api-reference/next/font/local)

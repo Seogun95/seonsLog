@@ -3,11 +3,14 @@ title: 'CSR'
 description:
   'CSR(Client Side Rendering)은 웹 페이지 렌더링 방식 중 하나로, 이 방식에서 웹
   페이지는 클라이언트(브라우저)에서 렌더링됩니다.'
+image: 'https://images.unsplash.com/photo-1635150844857-207361f0352a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'
 tags:
   - CSR
   - SSR
   - SEO
-date: '2023-07-07'
+  - 렌더링
+date: 2023-07-07 23:59:48
+category: '기초'
 ---
 
 # CSR (Client Side Rendering)
