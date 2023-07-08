@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { redirect } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 
@@ -15,13 +16,23 @@ export default async function BlogDetailPg({ params: { slugs } }: SlugProps) {
   const post = getAllPosts().find(post => {
     return post.slug.toLowerCase() === slug.toLowerCase();
   });
+
   if (!post) {
-    redirect('/');
+    redirect('/blog');
   }
 
   return (
     <>
-      <h1>{post.slug}</h1>
+      <div style={{ width: '100%', height: '300px', position: 'relative' }}>
+        <Image
+          src={post.image}
+          alt={post.title}
+          fill
+          style={{ objectFit: 'cover' }}
+          placeholder="blur"
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8Xw8AAoMBgDTD2qgAAAAASUVORK5CYII="
+        />
+      </div>
       <h1>{post.category}</h1>
       <ReactMarkdown>{post.content}</ReactMarkdown>
     </>
