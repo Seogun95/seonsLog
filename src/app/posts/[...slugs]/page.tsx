@@ -23,7 +23,7 @@ export default async function BlogDetailPg({ params: { slugs } }: SlugProps) {
 
   return (
     <>
-      <div style={{ width: '100%', height: '300px', position: 'relative' }}>
+      <div className="relative w-screen h-80 ml-[calc(-50vw+50%)] mb-5 ">
         <Image
           src={post.image}
           alt={post.title}
