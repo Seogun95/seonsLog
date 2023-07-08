@@ -158,6 +158,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kfarwell/nextjs-toploader@npm:^1.4.5":
+  version: 1.4.5
+  resolution: "@kfarwell/nextjs-toploader@npm:1.4.5"
+  dependencies:
+    "@types/nprogress": ^0.2.0
+    nprogress: ^0.2.0
+    prop-types: ^15.8.1
+  peerDependencies:
+    next: ">= 6.0.0"
+    react: ">= 16.0.0"
+    react-dom: ">= 16.0.0"
+  checksum: ee458765b8b0d9ff879fb9734b90bb99c3e843536797eb6786365a2fb9969f60e75746edae5bef8fdc28cf8e8a7f5692691154b39588a9103d469e943c2ba973
+  languageName: node
+  linkType: hard
+
 "@next/env@npm:13.4.8":
   version: 13.4.8
   resolution: "@next/env@npm:13.4.8"
@@ -379,6 +394,13 @@ __metadata:
   version: 20.4.0
   resolution: "@types/node@npm:20.4.0"
   checksum: 8ad632ee131611651fc5f4ac3a47427640e2492ab314fe1c4d0c3b97af71784ef48c53221d5f9922aab4724375dcb4f33137b3107ba2c356d9366216a31678aa
+  languageName: node
+  linkType: hard
+
+"@types/nprogress@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@types/nprogress@npm:0.2.0"
+  checksum: 561384775008ae58111f038f8f9468b3de8987cd753feef9bf6d07af0e1343390d492a078bb08a7b53ac7370208e31e06ac069cb852c435d49f5fe218e9769c4
   languageName: node
   linkType: hard
 
@@ -722,6 +744,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"asynckit@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "asynckit@npm:0.4.0"
+  checksum: 7b78c451df768adba04e2d02e63e2d0bf3b07adcd6e42b4cf665cb7ce899bedd344c69a1dcbce355b5f972d597b25aaa1c1742b52cffd9caccb22f348114f6be
+  languageName: node
+  linkType: hard
+
 "autoprefixer@npm:10.4.14":
   version: 10.4.14
   resolution: "autoprefixer@npm:10.4.14"
@@ -751,6 +780,17 @@ __metadata:
   version: 4.7.2
   resolution: "axe-core@npm:4.7.2"
   checksum: 5d86fa0f45213b0e54cbb5d713ce885c4a8fe3a72b92dd915a47aa396d6fd149c4a87fec53aa978511f6d941402256cfeb26f2db35129e370f25a453c688655a
+  languageName: node
+  linkType: hard
+
+"axios@npm:^1.4.0":
+  version: 1.4.0
+  resolution: "axios@npm:1.4.0"
+  dependencies:
+    follow-redirects: ^1.15.0
+    form-data: ^4.0.0
+    proxy-from-env: ^1.1.0
+  checksum: 7fb6a4313bae7f45e89d62c70a800913c303df653f19eafec88e56cea2e3821066b8409bc68be1930ecca80e861c52aa787659df0ffec6ad4d451c7816b9386b
   languageName: node
   linkType: hard
 
@@ -1014,6 +1054,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"combined-stream@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "combined-stream@npm:1.0.8"
+  dependencies:
+    delayed-stream: ~1.0.0
+  checksum: 49fa4aeb4916567e33ea81d088f6584749fc90c7abec76fd516bf1c5aa5c79f3584b5ba3de6b86d26ddd64bae5329c4c7479343250cfe71c75bb366eae53bb7c
+  languageName: node
+  linkType: hard
+
 "comma-separated-tokens@npm:^1.0.0":
   version: 1.0.8
   resolution: "comma-separated-tokens@npm:1.0.8"
@@ -1163,6 +1212,13 @@ __metadata:
     has-property-descriptors: ^1.0.0
     object-keys: ^1.1.1
   checksum: e60aee6a19b102df4e2b1f301816804e81ab48bb91f00d0d935f269bf4b3f79c88b39e4f89eaa132890d23267335fd1140dfcd8d5ccd61031a0a2c41a54e33a6
+  languageName: node
+  linkType: hard
+
+"delayed-stream@npm:~1.0.0":
+  version: 1.0.0
+  resolution: "delayed-stream@npm:1.0.0"
+  checksum: 46fe6e83e2cb1d85ba50bd52803c68be9bd953282fa7096f51fc29edd5d67ff84ff753c51966061e5ba7cb5e47ef6d36a91924eddb7f3f3483b1c560f77a0020
   languageName: node
   linkType: hard
 
@@ -1837,6 +1893,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"follow-redirects@npm:^1.15.0":
+  version: 1.15.2
+  resolution: "follow-redirects@npm:1.15.2"
+  peerDependenciesMeta:
+    debug:
+      optional: true
+  checksum: faa66059b66358ba65c234c2f2a37fcec029dc22775f35d9ad6abac56003268baf41e55f9ee645957b32c7d9f62baf1f0b906e68267276f54ec4b4c597c2b190
+  languageName: node
+  linkType: hard
+
 "for-each@npm:^0.3.3":
   version: 0.3.3
   resolution: "for-each@npm:0.3.3"
@@ -1853,6 +1919,17 @@ __metadata:
     cross-spawn: ^7.0.0
     signal-exit: ^4.0.1
   checksum: 139d270bc82dc9e6f8bc045fe2aae4001dc2472157044fdfad376d0a3457f77857fa883c1c8b21b491c6caade9a926a4bed3d3d2e8d3c9202b151a4cbbd0bcd5
+  languageName: node
+  linkType: hard
+
+"form-data@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "form-data@npm:4.0.0"
+  dependencies:
+    asynckit: ^0.4.0
+    combined-stream: ^1.0.8
+    mime-types: ^2.1.12
+  checksum: 01135bf8675f9d5c61ff18e2e2932f719ca4de964e3be90ef4c36aacfc7b9cb2fceb5eca0b7e0190e3383fe51c5b37f4cb80b62ca06a99aaabfcfd6ac7c9328c
   languageName: node
   linkType: hard
 
@@ -2047,7 +2124,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^10.2.2, glob@npm:^10.3.1":
+"glob@npm:^10.2.2":
+  version: 10.3.2
+  resolution: "glob@npm:10.3.2"
+  dependencies:
+    foreground-child: ^3.1.0
+    jackspeak: ^2.0.3
+    minimatch: ^9.0.1
+    minipass: ^5.0.0 || ^6.0.2 || ^7.0.0
+    path-scurry: ^1.10.1
+  bin:
+    glob: dist/cjs/src/bin.js
+  checksum: 3b4f455192d18eb1cf41a9193c825f594a70323b522f290d4b75191d3e399791f9da1febef339392a9828c03a3bf2b96e0b32cc8efb0068c2b11df585026a367
+  languageName: node
+  linkType: hard
+
+"glob@npm:^10.3.1":
   version: 10.3.1
   resolution: "glob@npm:10.3.1"
   dependencies:
@@ -3221,6 +3313,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mime-db@npm:1.52.0":
+  version: 1.52.0
+  resolution: "mime-db@npm:1.52.0"
+  checksum: 0d99a03585f8b39d68182803b12ac601d9c01abfa28ec56204fa330bc9f3d1c5e14beb049bafadb3dbdf646dfb94b87e24d4ec7b31b7279ef906a8ea9b6a513f
+  languageName: node
+  linkType: hard
+
+"mime-types@npm:^2.1.12":
+  version: 2.1.35
+  resolution: "mime-types@npm:2.1.35"
+  dependencies:
+    mime-db: 1.52.0
+  checksum: 89a5b7f1def9f3af5dad6496c5ed50191ae4331cc5389d7c521c8ad28d5fdad2d06fd81baf38fed813dc4e46bb55c8145bb0ff406330818c9cf712fb2e9b3836
+  languageName: node
+  linkType: hard
+
 "mimic-fn@npm:^2.1.0":
   version: 2.1.0
   resolution: "mimic-fn@npm:2.1.0"
@@ -3331,6 +3439,13 @@ __metadata:
   version: 6.0.2
   resolution: "minipass@npm:6.0.2"
   checksum: d140b91f4ab2e5ce5a9b6c468c0e82223504acc89114c1a120d4495188b81fedf8cade72a9f4793642b4e66672f990f1e0d902dd858485216a07cd3c8a62fac9
+  languageName: node
+  linkType: hard
+
+"minipass@npm:^5.0.0 || ^6.0.2 || ^7.0.0":
+  version: 7.0.1
+  resolution: "minipass@npm:7.0.1"
+  checksum: fedd1293f6a1b4e406c242a1cecfb75d0a81422bb2c365d999e33a88642fb68d70a89d95b550e08c640b3c0d9162829310e0c58b9b846b9218de25779818c709
   languageName: node
   linkType: hard
 
@@ -3467,6 +3582,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nextjs-toploader@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "nextjs-toploader@npm:1.4.2"
+  dependencies:
+    "@types/nprogress": ^0.2.0
+    nprogress: ^0.2.0
+    prop-types: ^15.8.1
+  peerDependencies:
+    next: ">= 6.0.0"
+    react: ">= 16.0.0"
+    react-dom: ">= 16.0.0"
+  checksum: dab1d3327791fe772d63ab1cad56c0bc6071e72339cd85cfa03a668485490604acd70ddd9744c084323f95abcc495e6ee5e135a19fd5f45ae09b744202f4ba7d
+  languageName: node
+  linkType: hard
+
 "node-gyp@npm:latest":
   version: 9.4.0
   resolution: "node-gyp@npm:9.4.0"
@@ -3547,6 +3677,13 @@ __metadata:
     gauge: ^4.0.3
     set-blocking: ^2.0.0
   checksum: ae238cd264a1c3f22091cdd9e2b106f684297d3c184f1146984ecbe18aaa86343953f26b9520dedd1b1372bc0316905b736c1932d778dbeb1fcf5a1001390e2a
+  languageName: node
+  linkType: hard
+
+"nprogress@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "nprogress@npm:0.2.0"
+  checksum: 66b7bec5d563ecf2d1c3d2815e6d5eb74ed815eee8563e0afa63d3f185ab1b9cf2ddd97e1ded263b9995c5019d26d600320e849e50f3747984daa033744619dc
   languageName: node
   linkType: hard
 
@@ -3778,6 +3915,16 @@ __metadata:
     lru-cache: ^9.1.1 || ^10.0.0
     minipass: ^5.0.0 || ^6.0.2
   checksum: 3b66a4a6ab66e45755b577c966ecf0da92d3e068b3c992d8f69aa2cc908ef4eda9358253e9b4f86cad43d3ad810ec445be164105975f5cb3fdab68459c59dc6e
+  languageName: node
+  linkType: hard
+
+"path-scurry@npm:^1.10.1":
+  version: 1.10.1
+  resolution: "path-scurry@npm:1.10.1"
+  dependencies:
+    lru-cache: ^9.1.1 || ^10.0.0
+    minipass: ^5.0.0 || ^6.0.2 || ^7.0.0
+  checksum: e2557cff3a8fb8bc07afdd6ab163a92587884f9969b05bbbaf6fe7379348bfb09af9ed292af12ed32398b15fb443e81692047b786d1eeb6d898a51eb17ed7d90
   languageName: node
   linkType: hard
 
@@ -4027,6 +4174,13 @@ __metadata:
   version: 6.2.0
   resolution: "property-information@npm:6.2.0"
   checksum: 23afce07ba821cbe7d926e63cdd680991961c82be4bbb6c0b17c47f48894359c1be6e51cd74485fc10a9d3fd361b475388e1e39311ed2b53127718f72aab1955
+  languageName: node
+  linkType: hard
+
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: ed7fcc2ba0a33404958e34d95d18638249a68c430e30fcb6c478497d72739ba64ce9810a24f53a7d921d0c065e5b78e3822759800698167256b04659366ca4d4
   languageName: node
   linkType: hard
 
@@ -4379,7 +4533,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.5, semver@npm:^7.3.7":
+"semver@npm:^7.3.5":
+  version: 7.5.4
+  resolution: "semver@npm:7.5.4"
+  dependencies:
+    lru-cache: ^6.0.0
+  bin:
+    semver: bin/semver.js
+  checksum: 12d8ad952fa353b0995bf180cdac205a4068b759a140e5d3c608317098b3575ac2f1e09182206bf2eb26120e1c0ed8fb92c48c592f6099680de56bb071423ca3
+  languageName: node
+  linkType: hard
+
+"semver@npm:^7.3.7":
   version: 7.5.3
   resolution: "semver@npm:7.5.3"
   dependencies:
@@ -4394,11 +4559,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "seogun_blog@workspace:."
   dependencies:
+    "@kfarwell/nextjs-toploader": ^1.4.5
     "@types/glob": ^8.1.0
     "@types/node": 20.4.0
     "@types/react": 18.2.14
     "@types/react-dom": 18.2.6
     autoprefixer: 10.4.14
+    axios: ^1.4.0
     dayjs: ^1.11.9
     eslint: 8.44.0
     eslint-config-next: 13.4.8
@@ -4407,6 +4574,7 @@ __metadata:
     glob: ^10.3.1
     gray-matter: ^4.0.3
     next: 13.4.8
+    nextjs-toploader: ^1.4.2
     postcss: 8.4.24
     prettier: ^3.0.0
     prettier-plugin-tailwindcss: ^0.3.0
