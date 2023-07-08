@@ -14,16 +14,17 @@ dayjs.extend(relativeTime);
 interface PostMatter {
   title: string;
   description: string;
+  image: string;
   tags: string[];
   date: string;
+  category: string;
 }
 
-interface Post extends PostMatter {
+export interface Post extends PostMatter {
   slug: string;
   content: string;
   readingMinutes: number;
   wordCount: number;
-  category: string;
 }
 
 const BASE_PATH = '/posts';
@@ -45,8 +46,8 @@ const parsePost = (postPath: string): Post | undefined => {
       path.dirname(postPath).split(path.sep).slice(-2, -1)[0] || '';
 
     // 카테고리 : 소분류
-    const subCategory = path.basename(path.dirname(postPath));
-    const formatCategory = `${mainCategory}/${subCategory}`.toUpperCase();
+    const formatCategory =
+      `${mainCategory}/${grayMatter.category}`.toUpperCase();
 
     return {
       ...grayMatter,
@@ -58,6 +59,7 @@ const parsePost = (postPath: string): Post | undefined => {
         .slice(postPath.indexOf(BASE_PATH))
         .replace('.md', '')
         .replace(/ /g, ''),
+      image: grayMatter.image ? grayMatter.image : '/images/posts/default.png',
       content,
     };
   } catch (error) {
