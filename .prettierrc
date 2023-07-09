@@ -6,7 +6,7 @@
   "quoteProps": "as-needed",
   "semi": true,
   "tabWidth": 2,
-  "trailingComma": "all",
+  "trailingComma": "es5",
   "useTabs": false,
   "endOfLine": "auto",
   "singleQuote": true

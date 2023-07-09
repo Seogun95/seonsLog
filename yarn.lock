@@ -2125,8 +2125,8 @@ __metadata:
   linkType: hard
 
 "glob@npm:^10.2.2":
-  version: 10.3.2
-  resolution: "glob@npm:10.3.2"
+  version: 10.3.3
+  resolution: "glob@npm:10.3.3"
   dependencies:
     foreground-child: ^3.1.0
     jackspeak: ^2.0.3
@@ -2135,7 +2135,7 @@ __metadata:
     path-scurry: ^1.10.1
   bin:
     glob: dist/cjs/src/bin.js
-  checksum: 3b4f455192d18eb1cf41a9193c825f594a70323b522f290d4b75191d3e399791f9da1febef339392a9828c03a3bf2b96e0b32cc8efb0068c2b11df585026a367
+  checksum: 29190d3291f422da0cb40b77a72fc8d2c51a36524e99b8bf412548b7676a6627489528b57250429612b6eec2e6fe7826d328451d3e694a9d15e575389308ec53
   languageName: node
   linkType: hard
 
@@ -4250,6 +4250,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-multi-carousel@npm:^2.8.4":
+  version: 2.8.4
+  resolution: "react-multi-carousel@npm:2.8.4"
+  checksum: ed4d95630f2a6c144f630874cc445e94678a9cfa4f1a2ebffe15b4f8317d3210f5141b64646f5b64689c18d11ebaeed008190ae864d7ee55193f12a9f1857542
+  languageName: node
+  linkType: hard
+
 "react-syntax-highlighter@npm:^15.5.0":
   version: 15.5.0
   resolution: "react-syntax-highlighter@npm:15.5.0"
@@ -4581,6 +4588,7 @@ __metadata:
     react: 18.2.0
     react-dom: 18.2.0
     react-markdown: ^8.0.7
+    react-multi-carousel: ^2.8.4
     react-syntax-highlighter: ^15.5.0
     reading-time: ^1.5.0
     tailwindcss: 3.3.2
