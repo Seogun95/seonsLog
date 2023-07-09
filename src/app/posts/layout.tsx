@@ -9,5 +9,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <article>{children}</article>;
+  return <section>{children}</section>;
 }
