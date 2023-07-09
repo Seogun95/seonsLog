@@ -27,6 +27,10 @@ export interface Post extends PostMatter {
   wordCount: number;
 }
 
+export interface CategorizedPosts {
+  [category: string]: Post[];
+}
+
 const BASE_PATH = '/posts';
 const POSTS_PATH = path.join(process.cwd(), BASE_PATH);
 
@@ -80,8 +84,10 @@ const parsePost = (postPath: string): Post | undefined => {
  * @property {string} category - 포스트 카테고리
  */
 
-export const getAllPosts = () => {
-  const postPaths: string[] = sync(`${POSTS_PATH}/**/*.md`);
+const getPostsFromDirectory = (directory: string) => {
+  const postPaths: string[] = sync(
+    `${POSTS_PATH}${directory !== 'all' ? '/' + directory : ''}/**/*.md`
+  );
   const posts: Post[] = postPaths
     .map(parsePost)
     .filter((post): post is Post => post !== undefined);
@@ -97,3 +103,20 @@ export const getAllPosts = () => {
 
   return posts;
 };
+
+/* ======= 카테고리별 컴포넌트 분리 함수 ======= */
+
+export function categorizedPost(category: Post[]): CategorizedPosts {
+  return category.reduce((acc: CategorizedPosts, post: Post) => {
+    if (!acc[post.category]) {
+      acc[post.category] = [];
+    }
+    acc[post.category].push(post);
+    return acc;
+  }, {});
+}
+
+/* ======= 카테고리별 데이터 ======= */
+export const getAllPosts = () => getPostsFromDirectory('all');
+export const getNextPosts = () => getPostsFromDirectory('nextJS');
+export const getPlayPosts = () => getPostsFromDirectory('test');
